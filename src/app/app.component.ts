@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'routing-example';
+  
+  constructor(private router:Router){}
+
+example1(){
+  this.router.navigate(['example1']);
+}
+
+example2(){
+  this.router.navigate(['example2']);
+}
 }
